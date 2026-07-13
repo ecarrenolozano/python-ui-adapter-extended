@@ -1,0 +1,29 @@
+uniprot_id	gene_symbol	ncbi_tax_id	entity_type_source	pathway_id	pathway_name	pathway_description	relationship_type	evidence_code	source_database	is_synthetic
+P00533	EGFR	9606	protein	R-HSA-000001	Synthetic signal transduction	Signaling by receptor tyrosine kinases	participates_in	SYNTHETIC	Reactome-like dummy	True
+P00533	EGFR	9606	protein	R-HSA-000010	Synthetic mTOR nutrient sensing	PI3K-AKT-mTOR growth signaling	participates_in	SYNTHETIC	Reactome-like dummy	True
+P01106	MYC	9606	protein	R-HSA-000002	Synthetic cell cycle control	Cell cycle checkpoints and mitotic control	participates_in	SYNTHETIC	Reactome-like dummy	True
+P01106	MYC	9606	protein	R-HSA-000004	Synthetic apoptosis regulation	Programmed cell death regulation	participates_in	SYNTHETIC	Reactome-like dummy	True
+P04406	GAPDH	9606	protein	R-HSA-000005	Synthetic metabolism support	Central carbon and energy metabolism	participates_in	SYNTHETIC	Reactome-like dummy	True
+P04637	TP53	9606	protein	R-HSA-000003	Synthetic DNA damage response	DNA repair and stress response	participates_in	SYNTHETIC	Reactome-like dummy	True
+P04637	TP53	9606	protein	R-HSA-000004	Synthetic apoptosis regulation	Programmed cell death regulation	participates_in	SYNTHETIC	Reactome-like dummy	True
+P04637	TP53	9606	protein	R-HSA-000002	Synthetic cell cycle control	Cell cycle checkpoints and mitotic control	participates_in	SYNTHETIC	Reactome-like dummy	True
+P07901	HSP90AA1	10090	protein	R-HSA-000007	Synthetic protein quality control	Chaperone-mediated protein folding	participates_in	SYNTHETIC	Reactome-like dummy	True
+P07901	HSP90AA1	10090	protein	R-HSA-000001	Synthetic signal transduction	Signaling by receptor tyrosine kinases	participates_in	SYNTHETIC	Reactome-like dummy	True
+P08228	SOD1	10090	protein	R-HSA-000003	Synthetic DNA damage response	DNA repair and stress response	participates_in	SYNTHETIC	Reactome-like dummy	True
+P08228	SOD1	10090	protein	R-HSA-000005	Synthetic metabolism support	Central carbon and energy metabolism	participates_in	SYNTHETIC	Reactome-like dummy	True
+P12023	APP	10090	protein	R-HSA-000008	Synthetic neuronal signaling	Neuronal survival and amyloid processing	participates_in	SYNTHETIC	Reactome-like dummy	True
+P12023	APP	10090	protein	R-HSA-000004	Synthetic apoptosis regulation	Programmed cell death regulation	participates_in	SYNTHETIC	Reactome-like dummy	True
+P28482	MAPK1	9606	protein	R-HSA-000001	Synthetic signal transduction	Signaling by receptor tyrosine kinases	participates_in	SYNTHETIC	Reactome-like dummy	True
+P28482	MAPK1	9606	protein	R-HSA-000010	Synthetic mTOR nutrient sensing	PI3K-AKT-mTOR growth signaling	participates_in	SYNTHETIC	Reactome-like dummy	True
+P31749	AKT1	9606	protein	R-HSA-000010	Synthetic mTOR nutrient sensing	PI3K-AKT-mTOR growth signaling	participates_in	SYNTHETIC	Reactome-like dummy	True
+P31749	AKT1	9606	protein	R-HSA-000004	Synthetic apoptosis regulation	Programmed cell death regulation	participates_in	SYNTHETIC	Reactome-like dummy	True
+P38398	BRCA1	9606	protein	R-HSA-000003	Synthetic DNA damage response	DNA repair and stress response	participates_in	SYNTHETIC	Reactome-like dummy	True
+P38398	BRCA1	9606	protein	R-HSA-000002	Synthetic cell cycle control	Cell cycle checkpoints and mitotic control	participates_in	SYNTHETIC	Reactome-like dummy	True
+P42345	MTOR	9606	protein	R-HSA-000010	Synthetic mTOR nutrient sensing	PI3K-AKT-mTOR growth signaling	participates_in	SYNTHETIC	Reactome-like dummy	True
+P62744	RHOA	10090	protein	R-HSA-000009	Synthetic cytoskeleton remodeling	Rho GTPase cytoskeleton organization	participates_in	SYNTHETIC	Reactome-like dummy	True
+P62744	RHOA	10090	protein	R-HSA-000001	Synthetic signal transduction	Signaling by receptor tyrosine kinases	participates_in	SYNTHETIC	Reactome-like dummy	True
+P62832	CDK1	10116	protein	R-HSA-000002	Synthetic cell cycle control	Cell cycle checkpoints and mitotic control	participates_in	SYNTHETIC	Reactome-like dummy	True
+Q63356	NFKB1	10116	protein	R-HSA-000006	Synthetic immune signaling	NF-kB and inflammatory signaling	participates_in	SYNTHETIC	Reactome-like dummy	True
+Q63356	NFKB1	10116	protein	R-HSA-000001	Synthetic signal transduction	Signaling by receptor tyrosine kinases	participates_in	SYNTHETIC	Reactome-like dummy	True
+Q9JHW1	CREB1	10116	protein	R-HSA-000001	Synthetic signal transduction	Signaling by receptor tyrosine kinases	participates_in	SYNTHETIC	Reactome-like dummy	True
+Q9JHW1	CREB1	10116	protein	R-HSA-000008	Synthetic neuronal signaling	Neuronal survival and amyloid processing	participates_in	SYNTHETIC	Reactome-like dummy	True
