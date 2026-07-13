@@ -1,50 +1,43 @@
 from biocypher import BioCypher
-from src.adapters.adapter_synthetic_proteins import (
-    AdapterNodeType,
-    AdapterProteinField,
-    AdapterEdgeType,
-    Adapter,
-    TSV_FILE_PATH_SYNTHETIC_PROTEINS
-)
+from src.adapters import adapter_synthetic_pathways, adapter_synthetic_proteins
 
 # Create an instance of BioCypher
 bc = BioCypher()
 
-# Choose the node type you want appear in the Knowledge Graph
-node_types = [AdapterNodeType.PROTEIN]
-
-# Choose protein adapter fields to include in the knowledge graph.
-node_fields = [
-    AdapterProteinField.ID,
-    AdapterProteinField.PREFERRED_ID,
-    AdapterProteinField.GENE_SYMBOL,
-    AdapterProteinField.NCBI_TAX_ID,
-]
-
-# Choose the node type you want appear in the Knowledge Graph
-edge_types = [
-    AdapterEdgeType.PROTEIN_PROTEIN_INTERACTION,
-    AdapterEdgeType.BINDING,
-    AdapterEdgeType.ACTIVATION,
-    AdapterEdgeType.PHOSPHORYLATION,
-    AdapterEdgeType.UBIQUITINATION,
-    AdapterEdgeType.INHIBITION,
-]
-
-# (there is not code here!) Choose interaction adapter fields to include in the knowledge graph.
-# By default, in case of not specifying this, BioCypher will bring all the fields defined in the adapter
-
-# Create an adapter instance
-adapter = Adapter(
-    tsv_path=TSV_FILE_PATH_SYNTHETIC_PROTEINS,
-    node_types=node_types,
-    node_fields=node_fields,
-    edge_types=edge_types,
+# Configure the protein interaction adapter.
+protein_adapter = adapter_synthetic_proteins.Adapter(
+    tsv_path=adapter_synthetic_proteins.TSV_FILE_PATH_SYNTHETIC_PROTEINS,
+    node_types=[adapter_synthetic_proteins.AdapterNodeType.PROTEIN],
+    node_fields=[
+        adapter_synthetic_proteins.AdapterProteinField.ID,
+        adapter_synthetic_proteins.AdapterProteinField.PREFERRED_ID,
+        adapter_synthetic_proteins.AdapterProteinField.GENE_SYMBOL,
+        adapter_synthetic_proteins.AdapterProteinField.NCBI_TAX_ID,
+    ],
+    edge_types=[
+        adapter_synthetic_proteins.AdapterEdgeType.PROTEIN_PROTEIN_INTERACTION,
+        adapter_synthetic_proteins.AdapterEdgeType.BINDING,
+        adapter_synthetic_proteins.AdapterEdgeType.ACTIVATION,
+        adapter_synthetic_proteins.AdapterEdgeType.PHOSPHORYLATION,
+        adapter_synthetic_proteins.AdapterEdgeType.UBIQUITINATION,
+        adapter_synthetic_proteins.AdapterEdgeType.INHIBITION,
+    ],
 )
 
-# Create a knowledge graph from the adapter
-bc.write_nodes(adapter.get_nodes())
-bc.write_edges(adapter.get_edges())
+# Configure the pathway participation adapter.
+pathway_adapter = adapter_synthetic_pathways.Adapter(
+    tsv_path=adapter_synthetic_pathways.TSV_FILE_PATH_SYNTHETIC_PATHWAYS,
+    node_types=[
+        adapter_synthetic_pathways.AdapterNodeType.PROTEIN,
+        adapter_synthetic_pathways.AdapterNodeType.PATHWAY,
+    ],
+    edge_types=[adapter_synthetic_pathways.AdapterEdgeType.PARTICIPATES_IN],
+)
+
+# Create a knowledge graph from both adapters.
+for adapter in (protein_adapter, pathway_adapter):
+    bc.write_nodes(adapter.get_nodes())
+    bc.write_edges(adapter.get_edges())
 
 # Generate assets for Neo4j exportation
 bc.write_import_call()

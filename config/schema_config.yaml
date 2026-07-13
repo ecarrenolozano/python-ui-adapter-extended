@@ -7,6 +7,11 @@ protein:
     namespace: uniprot
     input_label: uniprot_protein
 
+pathway:
+    represented_as: node
+    namespace: reactome
+    input_label: reactome_pathway
+
 #-------------------------------------------------------------------
 #------------------      RELATIONSHIPS (EDGES)     -----------------
 #-------------------------------------------------------------------
@@ -53,3 +58,14 @@ ubiquitination:
     inherit_properties: true
     represented_as: edge
     input_label: ubiquitination
+
+participates_in:
+    is_a: association
+    represented_as: edge
+    source: protein
+    target: pathway
+    input_label: participates_in
+    properties:
+        evidence_code: str
+        source_database: str
+        is_synthetic: bool
