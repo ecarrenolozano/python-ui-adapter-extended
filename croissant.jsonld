@@ -277,7 +277,7 @@
       ]
     }
   ]
-}
+},
 "hasPart": {
   "@type": "sc:Dataset",
   "name": "Synthetic Protein Interaction Dataset",
