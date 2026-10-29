@@ -51,7 +51,7 @@
   "@id": "python-ui-adapter",
   "name": "BioCypher adapter for synthetic protein data",
   "description": "Python UI adapter integrating the synthetic dataset with BioCypher.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "Hola",
     "Hallo",
