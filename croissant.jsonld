@@ -58,8 +58,8 @@
     "Adios",
     "Bye"
   ],
-  "license": "https://github.com/iulusoy/python-ui-adapter/blob/main/LICENSE",
-  "codeRepository": "https://github.com/iulusoy/python-ui-adapter",
+  "license": "https://github.com/ecarrenolozano/python-ui-adapter/blob/main/LICENSE",
+  "codeRepository": "https://github.com/ecarrenolozano/python-ui-adapter",
   "programmingLanguage": "Python",
   "targetProduct": "BioCypher",
   "creator": {
