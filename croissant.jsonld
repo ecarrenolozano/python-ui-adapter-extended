@@ -42,7 +42,7 @@
     "samplingRate": "cr:samplingRate",
     "sc": "https://schema.org/",
     "separator": "cr:separator",
-    "source": "cr:source",
+    "source": null,
     "subField": "cr:subField",
     "transform": "cr:transform"
   },
@@ -51,7 +51,7 @@
   "@id": "python-ui-adapter",
   "name": "BioCypher adapter for synthetic protein data",
   "description": "Python UI adapter integrating the synthetic dataset with BioCypher.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "Hola",
     "Hallo",
