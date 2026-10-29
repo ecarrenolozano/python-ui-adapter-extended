@@ -46,7 +46,7 @@
     "subField": "cr:subField",
     "transform": "cr:transform"
   },
-
+  "@type": "SoftwareSourceCode",
   "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE/",
   "@id": "python-ui-adapter",
   "name": "BioCypher adapter for synthetic protein data",
