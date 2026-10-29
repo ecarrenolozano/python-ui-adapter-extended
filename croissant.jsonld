@@ -52,6 +52,12 @@
   "name": "BioCypher adapter for synthetic protein data",
   "description": "Python UI adapter integrating the synthetic dataset with BioCypher.",
   "version": "0.0.1",
+  "keywords": [
+    "Hola",
+    "Hallo",
+    "Adios",
+    "Bye"
+  ],
   "license": "https://github.com/iulusoy/python-ui-adapter/blob/main/LICENSE",
   "codeRepository": "https://github.com/iulusoy/python-ui-adapter",
   "programmingLanguage": "Python",
