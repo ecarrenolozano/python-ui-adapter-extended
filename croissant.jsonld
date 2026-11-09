@@ -68,7 +68,7 @@
     "affiliation": "Heidelberg University",
     "identifier": "https://orcid.org/0000-0001-7294-4148"
   },
-  "citeAs": "This adapter was created to integrate the synthetic dataset with BioCypher. AN INTENTIONAL CHANGE HERE",
+  "citeAs": "This adapter was created to integrate the synthetic dataset with BioCypher.",
 "hasPart": {
   "@type": "sc:Dataset",
   "name": "Reactome synthetic dataset",
